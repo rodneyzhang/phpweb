@@ -25,7 +25,7 @@ class view_engine_smarty extends view_engine_object {
         $this->engine->debugging = isset($config['debug']) ? $config['debug'] : false;
         $this->engine->caching = isset($config['caching']) ? $config['caching'] : false;
         $this->engine->cache_lifetime = $config['cache_lifetime'];
-        $this->engine->template_dir = THEMEPATH.SP.config::getconfig('system', 'theme');
+        $this->engine->template_dir = THEMEPATH.SP.'templates'.SP.config::getconfig('system', 'theme');
         $this->engine->compile_dir = $config['compile_dir'];
         $this->engine->cache_dir = $config['cache_dir'];
     }

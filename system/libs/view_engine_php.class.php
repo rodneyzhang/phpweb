@@ -30,7 +30,7 @@ class view_engine_php extends view_engine_object {
      * @param string $tplname
      */
     public function display($tplname) {
-        $filepath = THEMEPATH.SP.config::getconfig('system', 'theme').SP.ROUTE_M.SP.$tplname.'.tpl.php';
+        $filepath = THEMEPATH.SP.'templates'.SP.config::getconfig('system', 'theme').SP.ROUTE_M.SP.$tplname.'.tpl.php';
         if (file_exists($filepath)) {
             extract($this->tpl_vars);
             include $filepath;

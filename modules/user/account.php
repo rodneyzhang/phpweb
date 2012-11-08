@@ -11,7 +11,7 @@ class account extends controller {
         $result = mysql_fetch_array($res);
         $title = md5('abc');
         $this->assign(get_defined_vars());
-        $this->template('login');
+        $this->display('login');
     }
     
     public function password() {
