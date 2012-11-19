@@ -1,4 +1,3 @@
-Smarty is applied successfully!!~~
 <pre>
 {$title}
 <?php echo $title."ok";?>
