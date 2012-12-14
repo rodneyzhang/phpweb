@@ -50,6 +50,7 @@ class base {
         ob_start();
         self::$finder = self::loadlib('finder', true);
         spl_autoload_register(array('base', 'loadlib'));
+        spl_autoload_register(array('base', 'loadmodule'));
         spl_autoload_register(array('base', 'autoload'));
         self::$app = self::loadlib('application', true);
         self::$app->start();

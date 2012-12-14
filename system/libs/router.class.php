@@ -34,11 +34,11 @@ class router {
         }
         
         $service = new $controller();
+        base::$app->controller = $service;
         if (method_exists($service, $action)) {
             define('ROUTE_M', $module);
             define('ROUTE_C', $controller);
             define('ROUTE_A', $action);
-            $service->$action();
         }
     }
 }

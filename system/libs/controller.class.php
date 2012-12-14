@@ -3,7 +3,7 @@ class controller {
 
     /**
      * 
-     * @var view_engine_smarty
+     * @var view_engine_object
      */
     protected $view_engine;
     
@@ -21,11 +21,11 @@ class controller {
         $this->view_engine->assign($vars);
     }
     
-    protected function addJs($js_filename) {
+    public function addJs($js_filename) {
     	//
     }
     
-    protected function addCss($css_filename) {
+    public function addCss($css_filename) {
     	//
     }
 }

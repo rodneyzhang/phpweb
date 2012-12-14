@@ -7,7 +7,7 @@ return array(
 
 'cache_dir' => BASEPATH.SP.'caches',
 'theme' => 'classic',
-'template_engine' => 'smarty',
+'template_engine' => 'php',
 'page_404' => '404.html',
 'page_default' => 'user/account/login',
 );
